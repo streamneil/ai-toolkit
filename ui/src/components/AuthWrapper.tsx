@@ -155,7 +155,7 @@ export default function AuthWrapper({ authRequired, children }: AuthWrapperProps
                   ></path>
                 </svg>
               ) : (
-验证密码
+                '验证密码'
               )}
             </button>
           </form>
