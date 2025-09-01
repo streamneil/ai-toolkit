@@ -91,10 +91,10 @@ export default function AuthWrapper({ authRequired, children }: AuthWrapperProps
         <div className="mb-4">
           {/* Replace with your own logo */}
           <div className="flex items-center justify-center">
-            <img src="/ostris_logo.png" alt="Ostris AI Toolkit" className="w-auto h-24 inline" />
+            <img src="/ostris_logo.png" alt="灵台AI大模型" className="w-auto h-24 inline" />
           </div>
         </div>
-        <h1 className="text-4xl mb-6">AI Toolkit</h1>
+        <h1 className="text-4xl mb-6">灵台AI大模型</h1>
       </div>
 
       {/* Right side - login form */}
@@ -103,11 +103,11 @@ export default function AuthWrapper({ authRequired, children }: AuthWrapperProps
           <div className="lg:hidden flex justify-center mb-4">
             {/* Mobile logo */}
             <div className="flex items-center justify-center">
-              <img src="/ostris_logo.png" alt="Ostris AI Toolkit" className="w-auto h-24 inline" />
+              <img src="/ostris_logo.png" alt="灵台AI大模型" className="w-auto h-24 inline" />
             </div>
           </div>
 
-          <h2 className="text-3xl text-center mb-2 lg:hidden">AI Toolkit</h2>
+          <h2 className="text-3xl text-center mb-2 lg:hidden">灵台AI大模型</h2>
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
