@@ -37,10 +37,10 @@ export default function JobActionBar({ job, onRefresh, afterDelete, className, h
           onClick={() => {
             if (!canStop) return;
             openConfirm({
-              title: 'Stop Job',
-              message: `Are you sure you want to stop the job "${job.name}"? You CAN resume later.`,
+              title: '停止任务',
+              message: `您确定要停止任务 "${job.name}" 吗？您可以稍后恢复。`,
               type: 'info',
-              confirmText: 'Stop',
+              confirmText: '停止',
               onConfirm: async () => {
                 await stopJob(job.id);
                 if (onRefresh) onRefresh();
@@ -64,15 +64,15 @@ export default function JobActionBar({ job, onRefresh, afterDelete, className, h
       )}
       <Button
         onClick={() => {
-          let message = `Are you sure you want to delete the job "${job.name}"? This will also permanently remove it from your disk.`;
+          let message = `您确定要删除任务 "${job.name}" 吗？这也将从您的磁盘中永久删除它。`;
           if (job.status === 'running') {
-            message += ' WARNING: The job is currently running. You should stop it first if you can.';
+            message += ' 警告：任务目前正在运行。如果可能，您应该先停止它。';
           }
           openConfirm({
-            title: 'Delete Job',
+            title: '删除任务',
             message: message,
             type: 'warning',
-            confirmText: 'Delete',
+            confirmText: '删除',
             onConfirm: async () => {
               if (job.status === 'running') {
                 try {

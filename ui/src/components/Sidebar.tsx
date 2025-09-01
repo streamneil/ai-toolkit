@@ -3,11 +3,11 @@ import { Home, Settings, BrainCircuit, Images, Plus} from 'lucide-react';
 
 const Sidebar = () => {
   const navigation = [
-    { name: 'Dashboard', href: '/dashboard', icon: Home },
-    { name: 'New Job', href: '/jobs/new', icon: Plus },
-    { name: 'Training Jobs', href: '/jobs', icon: BrainCircuit },
-    { name: 'Datasets', href: '/datasets', icon: Images },
-    { name: 'Settings', href: '/settings', icon: Settings },
+    { name: '概况', href: '/dashboard', icon: Home },
+    { name: '创建任务', href: '/jobs/new', icon: Plus },
+    { name: '训练任务', href: '/jobs', icon: BrainCircuit },
+    { name: '数据集', href: '/datasets', icon: Images },
+    { name: '设置', href: '/settings', icon: Settings },
   ];
 
 

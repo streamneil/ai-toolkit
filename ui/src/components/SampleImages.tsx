@@ -55,7 +55,7 @@ export const SampleImagesMenu = ({ job }: SampleImagesMenuProps) => {
       ) : (
         <FaDownload className="inline-block mr-2" />
       )}
-      {isZipping ? 'Preparing' : 'Download'}
+      {isZipping ? '准备中' : '下载'}
     </Button>
   );
 };
@@ -92,8 +92,8 @@ export default function SampleImages({ job }: SampleImagesProps) {
 
     if (status == 'loading') {
       icon = <LuLoader className="animate-spin w-8 h-8" />;
-      text = 'Loading Samples';
-      subtitle = 'Please wait while we fetch your samples...';
+      text = '加载样例中';
+      subtitle = '请稍候，我们正在获取您的样例...'
       showIt = true;
       bgColor = 'bg-gray-50 dark:bg-gray-800/50';
       textColor = 'text-gray-900 dark:text-gray-100';
@@ -101,8 +101,8 @@ export default function SampleImages({ job }: SampleImagesProps) {
     }
     if (status == 'error') {
       icon = <LuBan className="w-8 h-8" />;
-      text = 'Error Loading Samples';
-      subtitle = 'There was a problem fetching the samples.';
+      text = '加载样例错误';
+      subtitle = '获取样例时出现问题。'
       showIt = true;
       bgColor = 'bg-red-50 dark:bg-red-950/20';
       textColor = 'text-red-900 dark:text-red-100';
@@ -110,8 +110,8 @@ export default function SampleImages({ job }: SampleImagesProps) {
     }
     if (status == 'success' && sampleImages.length === 0) {
       icon = <LuImageOff className="w-8 h-8" />;
-      text = 'No Samples Found';
-      subtitle = 'No samples have been generated yet';
+      text = '未找到样例';
+      subtitle = '尚未生成样例';
       showIt = true;
       bgColor = 'bg-gray-50 dark:bg-gray-800/50';
       textColor = 'text-gray-900 dark:text-gray-100';
