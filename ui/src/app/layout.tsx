@@ -14,7 +14,7 @@ export const dynamic = 'force-dynamic';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: '灵台AI大模型',
+  title: '灵台 AI大模型',
   description: 'A toolkit for building AI things.',
 };
 
@@ -25,7 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="dark">
       <head>
-        <meta name="apple-mobile-web-app-title" content="灵台AI大模型" />
+        <meta name="apple-mobile-web-app-title" content="灵台 AI大模型" />
       </head>
       <body className={inter.className}>
         <ThemeProvider>
